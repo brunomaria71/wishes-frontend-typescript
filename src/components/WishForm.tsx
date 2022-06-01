@@ -42,7 +42,9 @@ export const WishForm: FC = () => {
         checked={isPossible}
         onChange={() => setIsPossible(!isPossible)}
       />
-      <Button type="submit">Submit</Button>
+      <Button id="button" type="submit">
+        Submit
+      </Button>
     </form>
   );
 };

@@ -1,0 +1,39 @@
+#list {
+  color: purple;
+  align-items: center;
+  margin-left: 30px;
+  font-family: "Lucida Sans";
+  flex-direction: column;
+  text-align: center;
+}
+
+#button {
+  color: green;
+}
+
+.form {
+  align-items: flex-start;
+}
+
+form {
+  align-items: center;
+  column-width: auto;
+  display: flex;
+  align-content: flex-end;
+  justify-content: center;
+}
+
+body {
+  line-height: 3;
+}
+
+h1 {
+  align-content: center;
+  text-align: center;
+}
+
+// li {
+//   text-align: center;
+//   justify-content: center;
+//   color: purple;
+// }

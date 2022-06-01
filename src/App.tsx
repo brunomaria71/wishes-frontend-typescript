@@ -8,6 +8,7 @@ import {
 } from "@mui/material";
 import { getWishes, Wish } from "./services/wishes";
 import { WishForm } from "./components/WishForm";
+import "./scss/app.scss";
 
 const theme = createTheme({
   typography: {
@@ -15,9 +16,9 @@ const theme = createTheme({
     fontWeightRegular: 600,
   },
   palette: {
-    mode: "dark",
+    mode: "light",
     background: {
-      default: "#131924",
+      default: "pink",
     },
     primary: {
       main: "#4d88ff",
@@ -40,8 +41,9 @@ export const App: FC = () => {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
+      <h1>A Wish Is A Dream Your Heart Makes</h1>
       <WishForm />
-      <List>
+      <List id="list">
         {wishes.map((wish) => {
           return <ListItem key={wish.name}>{wish.name}</ListItem>;
         })}
